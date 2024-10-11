@@ -1,0 +1,281 @@
+<html lang = "en">
+	<head>
+		<style>
+			body{
+				font-family: tahoma;
+				background-color: white;
+				
+			}
+			nav{
+				width:100%;
+				background: black;
+				overflow:auto;
+			}
+		
+			ul{
+				padding:0;
+				margin: 0 10px 0 0px;
+				list-style:none;
+			}
+			
+			li{
+				float:left;
+			}
+			
+			nav a{
+				width:130px;
+				display:block;
+				padding:25px 40px;
+				text-decoration:none;
+				font-family:Arial;
+				color:#f2f2f2;
+				text-align:center;
+			}
+		
+			nav a:hover{
+				background:gray;
+				transition:0.5s;
+				text-transform:uppercase;
+			}
+			
+			#title{
+				text-align: center;
+				font-size: 28;
+				color: #ffd966;
+			}
+			
+			#desc{
+				font-size: 20;
+				text-align: center;
+				color: white;
+			}
+			
+			#subtitle{
+				font-size: 24;
+				text-align: center;
+				color: #ffd966;
+			
+			}
+			.title{
+				text-align: center;
+				font-size: 28;
+				color: #ffd966;
+			}
+			
+			.desc{
+				font-size: 20;
+				text-align: center;
+				color: white;
+			}
+			
+			.subtitle{
+				font-size: 24;
+				text-align: center;
+				color: #ffd966;
+			
+			}
+			
+			nav ul li a:hover {
+				opacity:0.5;
+			}
+
+			nav ul li ul {
+				display:none;
+				position:absolute;
+				
+				background:#063247;
+				float:left;
+			}
+
+			nav ul li ul li {
+				width:80%;
+				
+			}
+
+			nav ul li:hover ul {
+				display: block;
+				width: 15%;
+			}
+			
+			.Content{
+				background-color: #003c80;
+				color: white;
+				margin-top: 5px;
+				padding-top: 15px;
+				padding-bottom: 20px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+			
+			#nameplate{
+				color: white;
+				font-weight: bold;
+
+			}
+			
+			#Greeting{
+				font-size: 32;
+				text-align: center;
+				color: #ffd966;
+			
+			}
+			.dropCon{
+				color: white;
+			
+			
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Travel Now</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#">EXPLORE</a>
+					<ul>
+						<li><a href="Luzon.html">Luzon</a></li>
+						<li><a href="Visayas.html">Visayas</a></li>
+						<li><a href="Mindanao.html">Mindanao</a></li>
+					</ul>
+				</li>
+				<li><a href="travelnow.html">TRAVEL NOW</a></li>
+			</ul>
+		</nav>
+		
+		<div class = "Content">
+			<h1 id = "Greeting">Travel Form</h1>
+			
+			<div class = "desc">
+				<h2 class = "subtitle">I. Personal Information</h2>
+				<form action="">
+					<label for = "fname">First name:</label><br>
+					<input type = "text" id="fname" name="fname" value="" placeholder="John"><br><br>
+					<label for = "lname">Last name:</label><br>
+					<input type = "text" id="lname" name="lname" value="" placeholder="Doe"><br><br>
+					<label for = "city">City:</label><br>
+					<input type = "text" id="city" name="city" value=""><br><br>
+					<label for = "state">State:</label><br>
+					<input type = "text" id="state" name="state" value=""><br><br>
+					<label for = "zipcode">Zip Code:</label><br>
+					<input type = "text" id="zipcode" name="zipcode" value=""><br><br>
+					<label for = "email">Email:</label><br> 
+					<input type = "email" id="email" name="email" value="" placeholder="example@gmail.com"><br><br>
+					<label for = "contactnumber">Contact Number:</label><br> 
+					<input type = "text" id="email" name="email" value=""><br><br>
+				</form>
+
+				<hr size = "1px" color = "black" width = "100%">
+				<h2 class = "subtitle">II. Travel Details</h2>
+				<form action="">
+					<label>Destination</label><br>
+					<select value="Select a Place">
+						<option class = "dropCon">Intramuros</option>
+						<option class = "dropCon">Boracay - Aklan</option>
+						<option class = "dropCon">Chocolate Hills - Bohol</option>
+						<option class = "dropCon">Philippine Eagle Centre - Davao</option>
+						<option class = "dropCon">Batanes</option>
+						<option class = "dropCon">Cagsawa Ruins - Albay</option>
+						<option class = "dropCon">Oslob, Cebu</option>
+						<option class = "dropCon">Talicud Island</option>
+						<option class = "dropCon">Davao Crocodile Park</option>
+						<option class = "dropCon">Mount Apo</option>			
+						<option class = "dropCon">Siargao Island</option>
+						<option class = "dropCon">Zamboanga del Sur</option>
+					  </select>
+					
+					  <br><br>
+
+					<label for="date">Check-in Date:</label><br>
+					<input type="month" id="date" name="date" value=""><br><br>
+
+					<label >Credit card Type</label><br>
+					<select value="Select a Place">
+						<option>Visa</option>
+						<option>Master Card</option>
+						<option>Paypal</option>
+						<option>American Express</option>
+					</select>
+					<br><br>
+
+					<label for="date">Check-out Date:</label><br>
+					<input type="month" id="date" name="date" value=""><br><br>
+				</form>
+
+				<label for="travel">Purpose of Travel</label><br>
+				<input type="text" id="travel" name="tarvel" value=""><br>
+
+				<hr size="1px" color = "black" width = "100%">
+
+				<label> 
+				<h2 class = "subtitle">III. COVID health Declaration</h2>
+				1. Check if you are experiencing or did you have any of the
+				following in the last 14 days?
+				</label>
+				<br>
+				<input type="checkbox"/>Fever&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="checkbox"/>Cough/Colds &nbsp&nbsp&nbsp&nbsp
+				<input type="checkbox"/>Body Pains &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="checkbox"/>Fatigue/Tiredness &nbsp&nbsp&nbsp&nbsp&nbsp
+				<br>
+				<input type="checkbox"/>Headache &nbsp
+				<input type="checkbox"/>Diarrhea &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="checkbox"/>Loss of taste or smell &nbsp&nbsp
+				<input type="checkbox"/>Difficulty of breathing &nbsp&nbsp
+				
+				<br> <br> <br>
+				<label id="ld"> 
+					2.  Have you had face-to-face contact with a probable or confirmed COVID-19 case within
+						1 meter and for more than 15 minutes for the past 14 days? (May nakasalamuha ka ba
+						na maaaring o kumpirmadong pasyente na may COV/D-19 mu/a sa isang metrong
+						distansya or mas malapit pa at tumagal ng mahigit 15 minuto sa nakalipas na 14
+						araw?)
+				</label>
+				<br> <br>
+				<input type="radio" name = "choice1" value = "Yes">YES 
+				<br>
+				<input type="radio" name = "choice1" value = "No"> NO 
+				
+				<br> <br> <br>
+				<label id="ld"> 
+					3.  Have you provided direct care for a patient with probable or confirmed COVID-19 case 
+					without using proper "Personal Protective Equipment (PPE)" for the past 14 days? (Naga/aga ka 
+					ba ng maaring o kumpirmadong pasyente na may COV/D-19 ng hindi nakasuot ng tamang PPE (Personal 
+					Protective Equipment) sa nakalipas na 14 araw?)
+				</label>
+				<br> <br>
+				<input type="radio" name = "choice2" value = "Yes">YES 
+				<br>
+				<input type="radio" name = "choice2" value = "No">NO
+				
+				<br> <br> <br>
+				<label id="ld"> 
+					4.  Have you traveled outside the Philippines in the last 14 days? (lkaw ba ay nagbiyahe
+						sa labas ng Pilipinas sa nakalipas na 14 na araw?)
+				</label>
+				<br> <br>
+				<input type="radio" name = "choice3" value = "Yes">YES
+				<br>
+				<input type="radio" name = "choice3" value = "No">NO
+				
+				<br> <br> <br>
+				<label id="ld"> 
+					5.  Have you traveled outside the current city/municipality where you reside? (lkaw ba ay
+						nagbiyahe sa labas ng iyong lungsod/munisipyo?) If yes, specify which city/municipality
+						you went to (Sabihin kung saan)
+				</label>
+				<br> <br>
+				<input type="radio" name = "choice4" value = "Yes">YES
+				<br>
+				<input type="radio" name = "choice4" value = "No">NO
+				<br><br>
+				<label id="ld">If yes:</label>
+				<input type="text" name="city" required>
+				<br><br>
+
+			<input type="submit" value="Submit">
+			<br><br>
+
+			</div>
+	</body>
+</html>

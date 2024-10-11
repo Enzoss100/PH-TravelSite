@@ -1,0 +1,269 @@
+<html lang = "en">
+	<head>
+		<style>
+			body{
+				font-family: tahoma;
+				background-color: white;
+				
+			}
+			nav{
+				width:100%;
+				background: black;
+				overflow:auto;
+			}
+		
+			ul{
+				padding:0;
+				margin: 0 10px 0 0px;
+				list-style:none;
+			}
+			
+			li{
+				float:left;
+			}
+			
+			nav a{
+				width:130px;
+				display:block;
+				padding:25px 40px;
+				text-decoration:none;
+				font-family:Arial;
+				color:#f2f2f2;
+				text-align:center;
+			}
+		
+			nav a:hover{
+				background:gray;
+				transition:0.5s;
+				text-transform:uppercase;
+			}
+			
+			#title{
+				text-align: center;
+				font-size: 28;
+				color: #ffd966;
+			}
+			
+			#desc{
+				font-size: 20;
+				text-align: center;
+				color: white;
+			}
+			
+			#subtitle{
+				font-size: 24;
+				text-align: center;
+				color: #ffd966;
+			
+			}
+			
+			nav ul li a:hover {
+				opacity:0.5;
+			}
+
+			nav ul li ul {
+				display:none;
+				position:absolute;
+				
+				background:#063247;
+				float:left;
+			}
+
+			nav ul li ul li {
+				width:80%;
+				
+			}
+
+			nav ul li:hover ul {
+				display: block;
+				width: 15%;
+			}
+			
+			.Content{
+				background-color: #003c80;
+				color: white;
+				margin-top: 5px;
+				padding-top: 15px;
+				padding-bottom: 20px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+			
+			#nameplate{
+				color: white;
+				font-weight: bold;
+
+			}
+			
+			#Greeting{
+				font-size: 32;
+				text-align: center;
+				color: #ffd966;
+			
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Philippine Tourism</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#">EXPLORE</a>
+					<ul>
+						<li><a href="Luzon.html">Luzon</a></li>
+						<li><a href="Visayas.html">Visayas</a></li>
+						<li><a href="Mindanao.html">Mindanao</a></li>
+					</ul>
+				</li>
+				<li><a href="travelnow.html">TRAVEL NOW</a></li>
+			</ul>
+		</nav>
+		
+		<div class = "Content">
+		
+			<center><iframe width="863" height="490" src="https://www.youtube.com/embed/eSUmkFPln_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			
+			<h1 id = "Greeting">Welcome to the Philippines</h1>
+			
+			<h1 id = "title">Brief History of the Philippines</h1>
+
+			<p id = "desc">
+				The Philippines is an archipelagic country that consists of 7,640 islands.<br>
+				The country was colonized multiple times throught its history, and there will be a brief discussion of those times.
+			</p>
+			
+			<h3 id = "subtitle">Spanish Era</h3>
+			
+			<p id = "desc">
+				The country was named after King Philip II of Spain (1556 - 1598), and was a colony of Spain for 333 years. During this time the Filipino people were treated unjustly and with cruelty by the friars. <br><br>
+				In the late 19th century, a cry for nationalism arose, with Dr. Jose P. Rizal spearheading the revolution with his works <q>Noli Me Tangere</q> and <q>El Filibusterismo</q>. Other notable people during the Spanish Revoltion are: <br> 
+				<center>
+					<table>
+						<tr>
+							<td>
+								<ul >
+									<li id = "desc">Andres Bonifacio, the founder of the Katipunan (KKK)</li><br>
+									<li id = "desc">Emilio Aguinaldo, the first president of the Philippines</li><br>
+									<li id = "desc">Apolinario Mabini, the brains of the revolution</li><br>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</p>
+			<p id = "desc">
+				The Spanish rule ended with the Spanish-American War, with the Americans taking over.
+			</p>
+			<center>
+				<table>
+					<tr>
+						<td>
+							<img src = "JoseRizal.jpg" width = "140px">
+						</td>
+						<td>
+							<img src = "AndresBonifacio.jpg" width = "140px">
+						</td>
+						<td>
+							<img src = "EmilioAguinaldo.jpg" width = "174px">
+						</td>
+						<td>
+							<img src = "ApolinarioMabini.jpg" width = "152px">
+						</td>
+					</tr>
+					<tr>
+						<td id = "nameplate">
+							<center>Jose P. Rizal</center>
+						</td>
+						<td id = "nameplate">
+							<center>Andres Bonifacio</center>
+						</td>
+						<td id = "nameplate">
+							<center>Emilio Aguinaldo</center>
+						</td>
+						<td id = "nameplate">
+							<center>Apolinario Mabini</center>
+						</td>
+					</tr>
+				</table>
+			</center>
+			
+			<hr width = "100%" size = "1px" color = "black">
+			
+			<h3 id = "subtitle">American Era</h3>
+			
+			<p id = "desc">
+				The American Period came in two phases. The first phase was from 1898 to 1935, when Washington described their mission as one to prepare the country for eventual independence.<br>
+				The second period of United States rule was from 1936 to 1946, when the Commonwealth Government was established.<br>
+			</p>
+			<p id = "desc">
+				Manuel L. Quezon was the president during the Commonwealth Government, and then was succeeded by Sergio Osmena. Afterwards, the Japanese Occupation occured during World War II.
+			</p>
+			
+			<center>
+				<table>
+					<tr>
+						<td>
+							<img src = "ManuelQuezon.jpg" width = "154px">
+						</td>
+						<td>
+							<img src = "SergioOsmena.jpg" width = "140px">
+						</td>
+					</tr>
+					<tr>
+						<td id = "nameplate">
+							<center>Manuel L. Quezon</center>
+						</td>
+						<td id = "nameplate">
+							<center>Sergio Osmena</center>
+						</td>
+					</tr>
+				</table>
+			</center>
+			
+			
+			<hr width = "100%" size = "1px" color = "black">
+			
+			<h3 id = "subtitle">Japanese Occupation</h3>
+			
+			<p id = "desc">
+				The country was under a <q>Puppet Government</q> during the Japanese Occupation, with Jose P. Laurel as the President.<br>
+				
+				The occupation itself was being faught in secret by underground guerrilla groups such as the <i>HUKBALAHAP</i> or the Hukbong Bayan Laban sa Hapon.
+			</p>
+			
+			<center>
+				<table>
+					<tr>
+						<td>
+							<img src = "JoseLaurel.jpg" width = "154px">
+						</td>
+						<td>
+							<img src = "Hukbalahap.png" height = "232px">
+						</td>
+					</tr>
+					<tr>
+						<td id = "nameplate">
+							<center>Jose P. Laurel</center>
+						</td>
+						<td id = "nameplate">
+							<center>The HUKBALAHAP</center>
+						</td>
+					</tr>
+				</table>
+			</center>
+			
+			<hr width = "100%" size = "1px" color = "black">
+			
+			<h1 id = "title"> Let's Explore the Philippines </h1>
+			
+			<center><img src = "PHMap.jpg" usemap = "#Philippines"></center>
+			<map name = "Philippines">
+				<area shape="rect" coords="175,82,458,394"  href="Luzon.html">
+				<area shape="rect" coords="79,395,562,573"  href="Visayas.html">
+				<area shape="rect" coords="57,574,600,838"  href="Mindanao.html">
+			</map>
+			
+		</div>
+	</body>
+</html>
